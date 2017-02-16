@@ -177,7 +177,7 @@ export default class Game extends Phaser.State {
 
     playBackgroundMusic() {
 		this.backgroundMusic.loop = true;
-		//this.backgroundMusic.play();
+		this.backgroundMusic.play();
 	}
 
     // Creates the title screen text

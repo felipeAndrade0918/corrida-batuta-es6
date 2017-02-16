@@ -34,14 +34,14 @@ export default class Player extends Phaser.Sprite {
     handleInput () {
         if ((this.game.input.mousePointer.isDown || this.game.input.pointer1.isDown) && this.body.touching.down) {
             this.body.velocity.y = -400;
-            //this.jumpFx.play();
+            this.jumpFx.play();
         }
     };
 
     damagePlayer() {
         // If the player is not invincible then we can damage him
         if (!this.invincibility) {
-            //this.hitFx.play();
+            this.hitFx.play();
             this.damage(1);
 
             // We remove the last heart since we took damage
